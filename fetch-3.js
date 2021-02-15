@@ -15,4 +15,6 @@ fetch('https://reqres.in/api/users', {
 })
 	.then((resp) => resp.json())
 	.then(console.log)
-	.catch(console.error);
+	.catch((error) => {
+		console.log('Error en la aplicacion'), console.log(error);
+	});
